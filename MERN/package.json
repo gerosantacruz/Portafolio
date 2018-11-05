@@ -1,0 +1,21 @@
+{
+  "name": "MERN",
+  "version": "1.0.0",
+  "description": "New proyect from fazt, a youtuber how make the tutorial, check out tyhe tutorial for yourself, good coding.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.9",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}
