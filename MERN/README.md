@@ -7,6 +7,7 @@ simple app, more precisely a To do app, you can save your progress around, thank
 You can use 
 ```
 npm start 
+or
 npm run dev
 ```
 
