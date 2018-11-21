@@ -53,13 +53,11 @@ export class EmployeesComponent implements OnInit {
   }
 
   deleteEmployee(_id:string){
-    if(confirm('Are you sure do you want to delete this record'){
+    if(confirm('Are you sure do you want to delete this record')) {
       this.employeeService.deleteEmployee(_id)
       .subscribe(res => {
         this.getEmployees();
     });
-    
-        
     }
   }
 
