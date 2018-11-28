@@ -20,3 +20,8 @@ padding: 1em;
   text-decoration-line: true;
   color:green;
 }
+
+.promo-code-button:focus{
+  outline: none;
+
+}
