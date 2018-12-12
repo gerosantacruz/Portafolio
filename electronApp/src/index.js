@@ -1,4 +1,4 @@
-const {app, BrowserWindow, Menu} = require('electron');
+const {app, BrowserWindow, Menu, ipcMain} = require('electron');
 const url = require('url');
 const path = require('path');
 
@@ -49,6 +49,11 @@ function createNewProductWindow(){
 
 }
 
+ipcMain.on('new-product', (e, newProduct) => {
+    mainWindow.webContents.send('new-product',newProduct);
+    newProductWindow.close();
+})
+
 const templateMenu = [
     {
         label:'File',
@@ -62,6 +67,9 @@ const templateMenu = [
             },
             {
                 label:'Remove All Products',
+                click(){
+                    mainWindow.webContents.send('remove-all-products');
+                }
         
             },
             {
@@ -82,6 +90,7 @@ if(process.env.NODE_ENV !== 'production'){
         label:'Dev tools',
         submenu:[{
             label:'Show or Hide Tools',
+            accelerator:"Ctrl + D",
             click(item, focusedWindow){
                 focusedWindow.toggleDevTools();
             }
