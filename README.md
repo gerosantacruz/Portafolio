@@ -1,4 +1,7 @@
-###Welcome to the beta branch
+# Portafolio
 
-Here a put the work in progress before to put in the master branch, if you use some of the app, maybe it's in progress,
-so possible dont work, so check the master branch, thank you.
+In this repositorty you can find example of littles proyects i have made and completed, like a game made in phyton and a MERN App, some of them by my own, other from tutorials and books. Feels free to check the proyects, any concern or suggestion, you can send my an email to: geronimo.santacruz2017@gmail.com.
+
+Other Links:
+Linkedin: www.linkedin.com/in/geronimo-santacruz-b53689153
+Telegram: @lordgero
