@@ -1,7 +1,7 @@
-﻿$data = Import-Csv -Path .\Data.csv
+﻿$data = Import-Csv -Path .\Git\Portafolio\Powershell\Data.csv
 
 foreach ($i in $data){
-    "('$($i.name)',$($i.DNI),'$($i.address)','$($i.email)')," >> values.txt
+    "('$($i.Cases)',$($i.DNI),'$($i.Comment)','$($i.url)','$($i.date)')," >> values.txt
 
 
 }
